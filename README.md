@@ -9,6 +9,4 @@
 
 ##### You have full ownership of your data accessible only by the use of your personal private encryption key. Once your data is encrypted and stored it can stay in place indefinitely on IPFS until the need to access it arises.It requires no monthly service fees. Instead, there is a small transaction fee to upload or download your data.
 
-##### What is Zentavault for more informatsion:
-##### * [Zentavault](www.zentachain.io)
 
