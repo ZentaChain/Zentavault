@@ -1,6 +1,6 @@
 ###  Zentavault
 
-##### Zentavault will start in 2020 Q1
+##### Zentavault will start in 2020 Q2
 
 *Zentavault is a new type of private data storage aimed at revolutionizing the cloud storage service space.*
 *Cloud servers and modern data storage services rely on centralized storage systems. These act as a sort of mega hard drives and are known* *to contain flaws in their security and privacy protocols. Your data can potentially be logged and accessed by either service* *providers or unwelcomed third parties.*
