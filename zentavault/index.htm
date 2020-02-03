@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<title>Zentavault - Coming Soon</title>
+		<meta charset="utf-8">
+		<meta name="publisher" content="Harun Kacemer">
+		<meta name="copyright" content="@Zentachain">
+		<meta name="author" content="Harun Kacemer">
+		<meta name="page-topic" content="Blockchain cloud">
+		<meta name="language" content="en">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<meta name="keywords" content="Zentavault, vault, blockchain, under construction, coming soon, zentalk, blockchain, cloud, ipfs, zentachain, design, zenta">
+		<meta name="description" content="Zentavault will be released in 2021 take a look later thank you so much your Zentachain team!">
+		<meta property="og:title" content="Zentavault - Coming Soon">
+		<meta property="og:type" content="https://Zentachain.io">
+		<meta property="og:url" content="zentachain.io">
+		<meta property="og:type" content="website">
+		<meta property="og:image:width" content="470">
+		<meta property="og:image:height" content="246">
+		<meta itemprop="image" content="https://zentachain.io/assets/zentachainlogo.png">
+			
+		<!-- Twitter -->
+		<meta property="twitter:title" content="Zentavault - Coming Soon">
+		<meta name="twitter:image" content="http://zentachain.io/">
+		<meta name="twitter:site" content="https://twitter.com/Zentachain">
+		<meta name="twitter:description" content="Zentachain">
+		<meta property="twitter:url" content="https://zentachain.io/">
+		<meta property="twitter:image" content="https://zentachain.io/assets/zentachainlogo.png">
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:description" content="(ζ) Zentachain is a decentralized high-throughput blockchain ecosystem designed for secure with anonymous offline communication and data storage.(ζ)">
+			
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://zentachain.io">
+		<meta property="og:title" content="Zentavault - Coming Soon">
+		<meta property="og:description" content="(ζ)Zentachain is a decentralized high-throughput blockchain ecosystem, designed for secure with anonymous offline communication and data storage.(ζ)">
+		<meta property="og:image" content="https://zentachain.io/assets/zentachainlogo.png">
+		<meta name="Distribution" content="Global">
+
+		<!-- Zenta / Favs / JS / CSS -->
+		<link rel="icon" type="png" href="./bg/favicon-zentachain.png">
+		<link rel="apple-touch-icon" href="./bg/zentachain-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./bg/zentachain-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./bg/zentachain-touch-icon-114x114.png">
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>		
+		<script type="text/javascript" src="js/modernizr.webgl.js"></script>
+		<script type="text/javascript" src="js/min/site.min.js"></script>		
+		<script type="text/javascript" src="js/three.min.js"></script>		
+		<script type="text/javascript" src="js/min/clouds.min.js"></script>		
+		<script type="text/javascript" src="js/min/fallback.min.js"></script>		
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/icons.css">
+		<link rel="stylesheet" href="css/fallback.css">
+	</head>
+
+	<body>
+		<div class="logo">
+			<iframe id="02ab3cc0-5221-4b31-897d-0d0930f34e08"
+				src="https://www.vectary.com/embed/viewer/v1/viewer.html?model=02ab3cc0-5221-4b31-897d-0d0930f34e08&env=studio1"
+				frameborder="0" width="100%" height="850">
+			</iframe>
+		</div>
+		<div class="no-webgl-only message">Your browser don't support 3d animations on this page.</div>
+		<div class="fallback-clouds"></div>
+
+		<div class="socials transit">
+			<a href="https://www.instagram.com/zentachain" target="_blank"><div class="social transit"><i class="fa fa-instagram"></i></div></a>
+			<a href="https://twitter.com/zentachain" target="_blank"><div class="social transit"><i class="fa fa-twitter"></i></div></a>
+			<a hre="https://github.com/ZentaChain" target="_blank"><div class="social transit"><i class="fa fa-github"></i></div></a>
+			<a href="https://www.linkedin.com/company/zentachain" target="_blank"><div class="social transit"><i class="fa fa-linkedin"></i></div></a>
+		</div>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123666404-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+
+			gtag('config', 'UA-123666404-1');
+		</script>
+	
+		<script id="vs" type="x-shader/x-vertex">			
+				varying vec2 vUv;
+
+				void main() {
+					vUv = uv;
+					gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+				}
+		</script>		
+		<script id="fs" type="x-shader/x-fragment">			
+				uniform sampler2D map;
+
+				uniform vec3 fogColor;
+				uniform float fogNear;
+				uniform float fogFar;
+
+				varying vec2 vUv;		
+
+				void main() {					
+					float depth = gl_FragCoord.z / gl_FragCoord.w;
+					float fogFactor = smoothstep( fogNear, fogFar, depth );
+					gl_FragColor = texture2D( map, vUv );
+					gl_FragColor.w *= pow( gl_FragCoord.z, 20.0 );
+					gl_FragColor = mix( gl_FragColor, vec4( fogColor, gl_FragColor.w ), fogFactor );
+				}
+		</script>
+	</body>
+</html>

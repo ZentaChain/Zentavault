@@ -1,0 +1,190 @@
+body.no-webgl {
+	/*background-image: url(../bg/zentachain.jpg;*/
+	background-position: center bottom;
+}
+
+.cloud {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-color: transparent;
+
+	white-space: nowrap;
+	font-size: 0;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-ms-perspective: 1000;
+	perspective: 1000;
+}
+
+.cloud.c-1 {
+	width: 100px;
+	height: 100px;
+	/*opacity: 0.2;*/
+	z-index: 11;
+	background-image: url(../fallback/c1.png);
+}
+.cloud.c-2 {
+	width: 200px;
+	height: 200px;
+	/*opacity: 0.3;*/
+	z-index: 12;
+	background-image: url(../fallback/c2.png);
+}
+.cloud.c-3 {
+	width: 300px;
+	height: 300px;
+	/*opacity: 0.4;*/
+	z-index: 13;
+	background-image: url(../fallback/c3.png);
+}
+.cloud.c-4 {
+	width: 400px;
+	height: 400px;
+	/*opacity: 0.6;*/
+	z-index: 14;
+	background-image: url(../fallback/c4.png);
+}
+.cloud.c-5 {
+	width: 500px;
+	height: 500px;
+	/*opacity: 0.8;*/
+	z-index: 15;
+	background-image: url(../fallback/c5.png);
+}
+.cloud.c-6 {
+	width: 600px;
+	height: 600px;
+	/*opacity: 1;*/
+	z-index: 16;
+	background-image: url(../fallback/c6.png);
+}
+.cloud.c-7 {
+	width: 700px;
+	height: 700px;
+	/*opacity: 0.8;*/
+	z-index: 17;
+	background-image: url(../fallback/c7.png);
+}
+
+@-webkit-keyframes clouds
+{
+	0%   {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		opacity: 0;
+	}
+	20%   {
+		transform: scale(1.25);
+		-webkit-transform: scale(1.25);
+		-moz-transform: scale(1.25);
+		-ms-transform: scale(1.25);
+		opacity: 1;
+	}
+
+	80%  {
+		transform: scale(2);
+		-webkit-transform: scale(2);
+		-moz-transform: scale(2);
+		-ms-transform: scale(2);
+		opacity: 1;
+	}
+	100%  {
+		transform: scale(3);
+		-webkit-transform: scale(3);
+		-moz-transform: scale(3);
+		-ms-transform: scale(3);
+		opacity: 0;
+	}
+}
+
+@keyframes clouds
+{
+	0%   {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		opacity: 0;
+	}
+	20%   {
+		transform: scale(1.25);
+		-webkit-transform: scale(1.25);
+		-moz-transform: scale(1.25);
+		-ms-transform: scale(1.25);
+		opacity: 1;
+	}
+
+	80%  {
+		transform: scale(2);
+		-webkit-transform: scale(2);
+		-moz-transform: scale(2);
+		-ms-transform: scale(2);
+		opacity: 1;
+	}
+	100%  {
+		transform: scale(3);
+		-webkit-transform: scale(3);
+		-moz-transform: scale(3);
+		-ms-transform: scale(3);
+		opacity: 0;
+	}
+}
+
+.cloud-scale { 
+
+/*	opacity: 0;
+	-webkit-animation: clouds 40s infinite ; 
+	-moz-animation: clouds 40s infinite ; 
+	animation: clouds 40s infinite ;*/
+}
+/*.cloud-scale.c-1 {
+	animation-delay: 10s;
+	-webkit-animation-delay: 10s;
+	-moz-animation-delay: 10s;
+}
+.cloud-scale.c-2 {
+	animation-delay: 20s;
+	-webkit-animation-delay: 20s;
+	-moz-animation-delay: 20s;
+}
+.cloud-scale.c-3 {
+	animation-delay: 30s;
+	-webkit-animation-delay: 30s;
+	-moz-animation-delay: 30s;
+}
+.cloud-scale.c-4 {
+	animation-delay: 40s;
+	-webkit-animation-delay: 40s;
+	-moz-animation-delay: 40s;
+}
+.cloud-scale.c-5 {
+	animation-delay: 50s;
+	-webkit-animation-delay: 50s;
+	-moz-animation-delay: 50s;
+}
+.cloud-scale.c-6 {
+	animation-delay: 60s;
+	-webkit-animation-delay: 60s;
+	-moz-animation-delay: 60s;
+}
+.cloud-scale.c-7 {
+	animation-delay: 70s;
+	-webkit-animation-delay: 70s;
+	-moz-animation-delay: 70s;
+}
+*/
+
+
