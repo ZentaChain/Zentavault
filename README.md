@@ -7,6 +7,6 @@ We have created a service that acts as an encryption delivery tool, which can se
 
 Users have full ownership of their data accessible only by the use of their personal private encryption key. Once your data is encrypted and stored it can stay in place indefinitely on IPFS until the need to access it arises. It requires no monthly service fees. Instead, there is a small transaction fee to upload or download your data.
 
-More details about Zentavalut [here](https://docs.zentachain.io/zentavault/about)
+More details about Zentavault [here](https://docs.zentachain.io/zentavault/about)
 
 ### Zentavault will start in 2021 Q3.
