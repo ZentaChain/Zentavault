@@ -9,4 +9,4 @@ Users have full ownership of their data accessible only by the use of their pers
 
 More details about Zentavault [here](https://docs.zentachain.io/zentavault/about)
 
-### Zentavault will start in 2021 Q3.
+### Zentavault will start in 2021/Q3.
